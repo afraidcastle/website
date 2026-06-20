@@ -13,12 +13,18 @@
 	<script>
 		const dropdown = document.getElementById("readingOption");
 		const displayText = document.getElementById("text");
+		const displayHeader = document.getElementById("textHead");
 
 		dropdown.addEventListener("change", function() {
 			const selectedValue = dropdown.value;
 			if (selectedValue == "me")
 			{
-				displayText.textContent = "Test";
+				displayText.textContent = "Right now I am waiting for my placement in university, so nothing much to do but build this website, eat, sleep and repeat. Although, maybe I should exercise more though.";
+				displayHeader.textContent = "Here are some stuff about me";
+			}
+			else if (selectedValue == "game"){
+				displayText.textContent = "Placeholder text";
+				displayHeader.textContent = "These are games I play";
 			}
 		});
 	</script>
@@ -36,11 +42,8 @@
 			</select>
 		</div>
 		<div class="body">
-		<h2 style="font-weight: bold; flex: center;">New blogpost site</h2>
-		<p>Finally after a procrastinating, studies and assignments, I took the time to actually work on this site. Which is pretty exciting. There really isn't much yet but <em>a lot</em> is planned. Here's a little overview for the blog site currently: On the left there's a sidebar that let's you go through a specific category and look for something that might interest you. In each category there are multiple other subcategories to narrow down whatever it is you so desire to read. That's about it for now, enjoy!</p>
-		</div>
-		<div>
-			<p id="text">Text.</p>
+		<h2 style="font-weight: bold; flex: center;" id="textHead">New blogpost site</h2>
+		<p id="text">Finally after a procrastinating, studies and assignments, I took the time to actually work on this site. Which is pretty exciting. There really isn't much yet but <em>a lot</em> is planned. Here's a little overview for the blog site currently: On the left there's a sidebar that let's you go through a specific category and look for something that might interest you. In each category there are multiple other subcategories to narrow down whatever it is you so desire to read. That's about it for now, enjoy!</p>
 		</div>
 	</div>
 </body>
