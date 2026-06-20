@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				displayText.textContent = "Games I play a lot: Terraria. That's all you get for now.";
 				displayHeader.textContent = "These are games I play";
 			}
-		else{
+		else if (selectedValue == "food") {
 				displayText.textContent = "I am a bit shy to admit I've eaten way more than what my body could handle (I weigh 53 kilos as of writing).";
 				displayHeader.textContent = "I love eating food";
 			}
