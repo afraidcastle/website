@@ -10,6 +10,24 @@
 			background-color: lightblue;
 		}
 	</style>
+</head>
+<body>
+	<h1 style="text-align: center; font-weight: bold;">Blip Blogs</h1>
+	<div class="container">
+		<div class="sidebar">
+			<p style="font-weight: bold;">Here are some reading categories (None yet because I haven't implemented it but I have to sleep now)</p>
+			<label for="readingOption">Choose:</label>
+			<select name="readingOption" id="readingOption">
+				<option default="me">Personal</option>
+				<option value="game">Games</option>
+				<option value="food">Foods</option>
+			</select>
+		</div>
+		<div class="body">
+		<h2 style="font-weight: bold; flex: center;" id="textHead">New blogpost site</h2>
+		<p id="text">Finally after a procrastinating, studies and assignments, I took the time to actually work on this site. Which is pretty exciting. There really isn't much yet but <em>a lot</em> is planned. Here's a little overview for the blog site currently: On the left there's a sidebar that let's you go through a specific category and look for something that might interest you. In each category there are multiple other subcategories to narrow down whatever it is you so desire to read. That's about it for now, enjoy!</p>
+		</div>
+	</div>
 	<script>
 		const dropdown = document.getElementById("readingOption");
 		const displayText = document.getElementById("text");
@@ -34,23 +52,5 @@
 			});
 		});
 	</script>
-</head>
-<body>
-	<h1 style="text-align: center; font-weight: bold;">Blip Blogs</h1>
-	<div class="container">
-		<div class="sidebar">
-			<p style="font-weight: bold;">Here are some reading categories (None yet because I haven't implemented it but I have to sleep now)</p>
-			<label for="readingOption">Choose:</label>
-			<select name="readingOption" id="readingOption">
-				<option default="me">Personal</option>
-				<option value="game">Games</option>
-				<option value="food">Foods</option>
-			</select>
-		</div>
-		<div class="body">
-		<h2 style="font-weight: bold; flex: center;" id="textHead">New blogpost site</h2>
-		<p id="text">Finally after a procrastinating, studies and assignments, I took the time to actually work on this site. Which is pretty exciting. There really isn't much yet but <em>a lot</em> is planned. Here's a little overview for the blog site currently: On the left there's a sidebar that let's you go through a specific category and look for something that might interest you. In each category there are multiple other subcategories to narrow down whatever it is you so desire to read. That's about it for now, enjoy!</p>
-		</div>
-	</div>
 </body>
 </html>
