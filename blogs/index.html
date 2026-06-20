@@ -16,8 +16,10 @@
 
 		dropdown.addEventListener("change", function() {
 			const selectedValue = dropdown.value;
-
-			displayText.textContent = selectedValue;
+			if (selectedValue == "me")
+			{
+				displayText.textContent = "Test";
+			}
 		});
 	</script>
 </head>
@@ -26,7 +28,7 @@
 	<div class="container">
 		<div class="sidebar">
 			<p style="font-weight: bold;">Here are some reading categories (None yet because I haven't implemented it but I have to sleep now)</p>
-			<label for="readingOption">Choose:</label>
+			<label for="read">Choose:</label>
 			<select name="readingOption" id="readingOption">
 				<option value="me">Personal</option>
 				<option value="game">Games</option>
