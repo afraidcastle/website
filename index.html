@@ -2,13 +2,48 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Main Hub</title>
+		<style>
+			body{
+				max-width: 100%;
+				background-color: rgb(39, 39, 68);
+			}
+			h1{
+				color: white;
+			}
+			p{
+				color: white;
+			}
+			.border{
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				overflow: auto;
+				height: 180px;
+				transition: all 1.0s ease-in-out;
+			}
+			.border:hover{
+				height: 440px;
+			}
+		</style>
 	</head>
 	<body>
-		<h1 style="text-align: center;">BlipBlopHub</h1>
-		<div style="border: solid 2px black;padding: 20px;">
-			<p>This website will be home to some of my creative endeavors as well as personal blog where I talk extensively about video games, art, music and writing in general. As a little teaser:</p>
+		<div style="display: flex; margin-bottom: 10px;">
+			<img src="images/candleonskull.gif" alt="candleonskull" style="margin-left: auto; margin-right: auto;">
+			<div style="display: flex; flex-direction: column;"><h1 style="text-align: center;">BlipBlopHub</h1><img src="images/divider.gif"></div>
+			<img src="images/candleonskull.gif" alt="candleonskull" style="margin-left: auto; margin-right: auto;">
+		</div>
+		<div class="border" style="border: solid 2px rgb(69, 119, 148);padding: 20px;">
+			<p>This website will be home to some of my creative endeavors as well as personal blog where I talk extensively about video games, art, music and writing in general. As a little teaser:
+			</p>
 			<p>Here's a <a href="blogs/index.html">link</a> to my blogpost!</p>
-		<p>Also, I'll be slowly building this website, it's very hard for me to commit to something but my goal here is to add on something atleast every month so don't expect frequent updates. Anyways enjoy!</p><p>PS: there really isn't a conventional way I'll be building this website, as it will entirely be handwritten, by me, all alone.</p></div>
+			<p>Also, I will be building this website slowly, as it is very hard for me to commit to something but my goal here is to add on something atleast every month so don't expect frequent updates. Anyways enjoy!</p>
+			<p>PS: there really isn't a conventional way I'll be building this website, as it will entirely be handwritten, by me, all alone.</p>
+			<div style="display: flex;">
+				<img alt="image of my cat" src="images/cat.jpg" style="transform-origin: top left; max-width:200px; height:auto; flex-flow: row;">
+				<p style="align-content: center; padding:4px;">This is my cat, say hi.</p></img>
+			</div>
+		</div>
 	</body>
 </html>
